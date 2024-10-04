@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Interactive Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <h1>Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#analytics">Analytics</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="dashboard-sidebar">
+            <ul>
+                <li><a href="#overview" aria-label="Overview Section">Overview</a></li>
+                <li><a href="#analytics" aria-label="Analytics Section">Analytics</a></li>
+                <li><a href="#settings" aria-label="Settings Section">Settings</a></li>
+            </ul>
+        </aside>
+        <main class="dashboard-content">
+            <section id="overview">
+                <h2>Overview</h2>
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>$1,234</p>
+                </div>
+                <div class="card">
+                    <h3>Sale</h3>
+                    <p>$12,345</p>
+                </div>   
+    </section>
+    <section id="analytics">
+        <h2>Analytics</h2>
+        <div class="chart">
+            <div class="bar" style="height: 50%;" aria-label="Bar representing 50%"></div>
+            <div class="bar" style="height: 75%;" aria-label="Bar representing 75%"></div>
+            <div class="bar" style="height: 60%;" aria-label="Bar representing 60%"></div>
+
+        </div>
+    </section>
+    <section id="settings">
+        <h2>Settings</h2>
+        <p>Settings content goes here...</p>
+    </section>
+    </main>
+    </div>
+</body>
+
+</html>

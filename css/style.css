@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5; /* substituir border-color por background-color */
+}
+
+
+.dashboard {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.dashboard-header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.dashboard-header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dashboard-sidebar {
+    grid-area: sidebar;
+    background-color: #444;
+    color: #fff;
+    padding: 1rem;
+}
+
+.dashboard-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.dashboard-content {
+    grid-area: content;
+    padding: 2rem;
+    /* overflow-y: auto; Remover se não for desejada rolagem */
+}
+
+.dashboard-header nav a:hover,
+.dashboard-sidebar a:hover,
+.dashboard-header nav a:focus,
+.dashboard-sidebar a:focus {
+    color: #00bfff; /* Um azul claro para destacar */
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #e7e7e7;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+    display: flex;
+    gap: 1rem;
+}
+
+.bar {
+    width: 30px; /* Um pouco mais largo para visibilidade */
+    background-color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-areas:
+            "header"
+            "content"
+            "sidebar";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto; /* Corrigir o nome da propriedade */
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-content {
+        padding: 1rem;
+    }
+}
+
