@@ -80,7 +80,6 @@ Interactive Dashboard Pro é um projeto inovador desenvolvido exclusivamente com
 
 ### CSS
 
-```css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -194,28 +193,3 @@ body {
         padding: 1rem;
     }
 }
-
-
-
-Como Executar
-
-	1.	Clone o repositório:
-
-git clone https://github.com/codecraf1/interactive-dashboard-pro.git
-
-
-	2.	Navegue até o diretório do projeto:
-
-cd interactive-dashboard-pro
-
-
-	3.	Abra o arquivo index.html no seu navegador preferido.
-
-Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar este projeto.
-
-Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/codecraf1/Interactive-Dashboard-Pro/blob/main/LICENSE) para mais detalhes.
-
