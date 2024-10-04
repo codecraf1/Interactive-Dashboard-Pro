@@ -16,6 +16,10 @@ Interactive Dashboard Pro é um projeto inovador desenvolvido exclusivamente com
 - **Barra Lateral**: Oferece links rápidos para diferentes seções do dashboard, como perfil, notificações e mensagens.
 - **Conteúdo Principal**: Contém seções como visão geral, análises e configurações, cada uma com cartões informativos e gráficos interativos.
 
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar este projeto.
+
 ## Estrutura do Projeto
 
 ### HTML
@@ -193,7 +197,3 @@ body {
         padding: 1rem;
     }
 }
-
-### Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar este projeto.
