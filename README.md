@@ -217,5 +217,5 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull re
 
 Licença
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/codecraf1/Interactive-Dashboard-Pro/blob/main/LICENSE) para mais detalhes.
 
