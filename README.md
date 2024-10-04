@@ -26,8 +26,9 @@ Interactive Dashboard Pro é um projeto inovador desenvolvido exclusivamente com
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Interactive Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="dashboard">
@@ -43,9 +44,9 @@ Interactive Dashboard Pro é um projeto inovador desenvolvido exclusivamente com
         </header>
         <aside class="dashboard-sidebar">
             <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#notifications">Notifications</a></li>
-                <li><a href="#messages">Messages</a></li>
+                <li><a href="#overview" aria-label="Overview Section">Overview</a></li>
+                <li><a href="#analytics" aria-label="Analytics Section">Analytics</a></li>
+                <li><a href="#settings" aria-label="Settings Section">Settings</a></li>
             </ul>
         </aside>
         <main class="dashboard-content">
@@ -53,19 +54,19 @@ Interactive Dashboard Pro é um projeto inovador desenvolvido exclusivamente com
                 <h2>Overview</h2>
                 <div class="card">
                     <h3>Total Users</h3>
-                    <p>1,234</p>
+                    <p>$1,234</p>
                 </div>
                 <div class="card">
-                    <h3>Sales</h3>
+                    <h3>Sale</h3>
                     <p>$12,345</p>
                 </div>
             </section>
             <section id="analytics">
                 <h2>Analytics</h2>
-                <div class="chart"> <!-- Placeholder for a CSS-only chart -->
-                    <div class="bar" style="height: 50%"></div>
-                    <div class="bar" style="height: 75%"></div>
-                    <div class="bar" style="height: 60%"></div>
+                <div class="chart">
+                    <div class="bar" style="height: 50%;" aria-label="Bar representing 50%"></div>
+                    <div class="bar" style="height: 75%;" aria-label="Bar representing 75%"></div>
+                    <div class="bar" style="height: 60%;" aria-label="Bar representing 60%"></div>
                 </div>
             </section>
             <section id="settings">
@@ -88,19 +89,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f2f5;
+    background-color: #f0f2f5; /* substituir border-color por background-color */
 }
 
 .dashboard {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header header"
         "sidebar content";
     grid-template-columns: 250px 1fr;
     grid-template-rows: auto 1fr;
     width: 80%;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .dashboard-header {
@@ -149,13 +150,20 @@ body {
 .dashboard-content {
     grid-area: content;
     padding: 2rem;
-    overflow-y: auto;
+    /* overflow-y: auto; Remover se não for desejada rolagem */
+}
+
+.dashboard-header nav a:hover,
+.dashboard-sidebar a:hover,
+.dashboard-header nav a:focus,
+.dashboard-sidebar a:focus {
+    color: #00bfff; /* Um azul claro para destacar */
+    text-decoration: underline;
 }
 
 .card {
     background-color: #e7e7e7;
     padding: 1rem;
-    margin-bottom: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -166,26 +174,34 @@ body {
 }
 
 .bar {
-    width: 20px;
+    width: 30px; /* Um pouco mais largo para visibilidade */
     background-color: #007bff;
 }
 
 @media (max-width: 768px) {
     .dashboard {
-        grid-template-areas: 
+        grid-template-areas:
             "header"
             "content"
             "sidebar";
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto; /* Corrigir o nome da propriedade */
     }
 }
+
+@media (max-width: 768px) {
+    .dashboard-content {
+        padding: 1rem;
+    }
+}
+
+
 
 Como Executar
 
 	1.	Clone o repositório:
 
-git clone https://github.com/seu-usuario/interactive-dashboard-pro.git
+git clone https://github.com/codecraf1/interactive-dashboard-pro.git
 
 
 	2.	Navegue até o diretório do projeto:
